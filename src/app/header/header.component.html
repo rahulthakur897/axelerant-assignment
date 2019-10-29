@@ -1,0 +1,15 @@
+<header id="header">
+    <figure>
+        <img src="../../assets/images/logo.png" alt="company logo" />
+    </figure>
+    <div class="header__menu-bar" (click)="toggleMenu(navMenu)">&equiv;</div>
+    <nav>
+        <div class="header__top-links" #navMenu [hidden]="isMobileMenu">
+            <a href="#" class="top-links--active">About</a>
+            <a href="#">Services</a>
+            <a href="#">Solutions</a>
+            <a href="#">Blog</a>
+        </div>
+    </nav>
+    <button></button>
+</header>

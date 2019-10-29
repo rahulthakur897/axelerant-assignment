@@ -1,0 +1,27 @@
+#about{
+    display: flex;
+    margin: 5%;
+    .about__content{
+        width: 50%;
+    }
+    .content__map{
+        background-image: url('../../assets/images/map.jpg');
+        background-size: cover;
+        height: 334px;
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #about{
+        display: block;
+        .about__content{
+            width: 100%;
+        }
+        .content__map{
+            height: 195px;
+            width: 100%;
+        }
+    }
+}

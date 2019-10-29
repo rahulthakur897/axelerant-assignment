@@ -1,0 +1,11 @@
+<section id="banner">
+    <h1>Integer bibendum sit amet arcu vel egestas.</h1>
+    <div class="banner__container">
+        <div class="container__boxes">
+            <figure class="boxes__box" *ngFor="let data of boxData">
+                <img src="{{data.imgSrc}}" alt="{{data.imgType}}" />
+                <figcaption>{{data.imgType}}</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>

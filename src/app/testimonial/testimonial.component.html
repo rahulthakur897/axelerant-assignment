@@ -1,0 +1,17 @@
+<section id="testimonial">
+    <h1>Testimonials</h1>
+   <div class=testimonial__container>
+       <div class="container__testimonials">
+            <div class="testimonials__testimonial" *ngFor="let testimonial of testimonials">
+                <div class="testimonial__content">
+                    {{testimonial.content}}
+                    <div class="content--down_arrow"><div class="content--inner_down_arrow"></div></div>
+                </div>
+                <div class="testimonial__user-detail">
+                    <img src="../../assets/images/user.png" alt="user logo" />
+                    <span>{{testimonial.user.name}}<br/>{{testimonial.user.country}}</span>
+                </div>
+            </div>
+        </div>
+   </div>
+</section>

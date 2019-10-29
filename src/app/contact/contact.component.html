@@ -1,0 +1,13 @@
+<section id="contact">
+    <h1>Convinced To Work With Us?</h1>
+    <h3>Company has helped agencies keep their promises to clients since  2005.</h3>
+    <div class="contact__form-container">
+        <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <input formControlName="fullname" placeholder="Fullname" tabindex="1">
+            <input formControlName="email"  placeholder="Email Address" tabindex="2">
+            <input formControlName="phone"  placeholder="Phone Number" maxlength="10" tabindex="3">
+            <textarea formControlName="message" placeholder="Message in brief" tabindex="4"></textarea>
+            <button type="submit" [disabled]="!contactForm.valid" tabindex="5">Submit</button>
+        </form>
+    </div>
+</section>
